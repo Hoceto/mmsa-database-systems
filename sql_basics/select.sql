@@ -9,4 +9,5 @@ LEFT OUTER JOIN order_item oi
 ON (o.id = oi.order_id)
 LEFT OUTER JOIN item it
 ON (oi.item_id = it.id)
-GROUP BY p.first_name;
+GROUP BY p.id
+ORDER BY p.first_name ASC;
